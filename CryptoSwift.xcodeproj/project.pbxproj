@@ -1032,6 +1032,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 75211FB020724A10004E41F8 /* Project-Debug.xcconfig */;
 			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+				ENABLE_BITCODE = YES;
+				OTHER_CFLAGS = "-fembed-bitcode";
 			};
 			name = Debug;
 		};
@@ -1039,6 +1042,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 75211FAA20724A0F004E41F8 /* Project-Release.xcconfig */;
 			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+				ENABLE_BITCODE = YES;
+				OTHER_CFLAGS = "-fembed-bitcode";
 			};
 			name = Release;
 		};
@@ -1107,6 +1113,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 75211FA620724A0F004E41F8 /* Project-Test.xcconfig */;
 			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+				ENABLE_BITCODE = YES;
+				OTHER_CFLAGS = "-fembed-bitcode";
 			};
 			name = Test;
 		};
